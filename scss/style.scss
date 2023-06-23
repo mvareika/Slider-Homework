@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Orbitron', cursive;
+  background: #19191a;
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height:100%;
+}
+.swiper-slide{
+  text-align: center;
+}
+
+h1{
+  position: absolute;
+  top: 200px;
+}
+.megstamiausi:hover::before{
+  transform: translateX(0);
+}
+.megstamiausi:hover::after{
+  transform: translateX(0);
+}
+.megstamiausi::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: +1;
+}
+.megstamiausi::after{
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 0.9s;
+  transform: translateX(+100%);
+  z-index: -1;}
+.megstamiausi:hover{
+  color: white;
+}
+.lorn-p:hover::before{
+  transform: translateX(0);
+}
+.lorn-p:hover::after{
+  transform: translateX(0);
+}
+.lorn-p::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: +1;
+}
+.lorn-p::after{
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 0.9s;
+  transform: translateX(+100%);
+  z-index: -1;}
+
+.clams-p:hover::before{
+  transform: translateX(0);
+}
+.clams-p:hover::after{
+  transform: translateX(0);
+}
+.clams-p::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: +1;
+}
+.clams-p::after{
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 220px;
+  width: 50%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 0.9s;
+  transform: translateX(+100%);
+  z-index: -1;}
+
+  
+.rufus-p:hover::before{
+  transform: translateX(0);
+}
+.rufus-p:hover::after{
+  transform: translateX(0);
+}
+.rufus-p::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 1s;
+  transform: translateX(-100%);
+  z-index: +1;
+}
+.rufus-p::after{
+  content: "";
+  position: absolute;
+  top: 90%;
+  left:215px;
+  width: 50%;
+  height: 10%;
+  background-color: #EEE3CB;
+  transition: all 0.9s;
+  transform: translateX(+100%);
+  z-index: 1;}
+
+  .rufus{
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  box-shadow: 3px 3px rgb(27, 27, 27);
+  }
+
+  .rufus-p{
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 340px;
+  }
+
+.megstamiausi:hover{
+  color: white;
+}
+.megstamiausi{
+  position: absolute;
+  top: 420px;
+  left: 420px;
+font-size: 60px;
+text-shadow: 4px 4px black;
+overflow: hidden;
+
+}
+
+.swiper-slide{
+  width: 100%;
+    .lorn-p{
+      font-size: 50px;
+      position: absolute;
+      top: 100px;
+      left: 340px;
+    }
+  .lorn{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  box-shadow: 3px 3px rgb(27, 27, 27);
+  
+  }
+  .clams{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  box-shadow: 3px 3px rgb(27, 27, 27);
+  }
+  .clams-p{
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 340px;
+  }
+  
+}
+.swiper-button-prev,
+.swiper-button-next{
+  color: black;
+  transition: 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  box-shadow: 0 0 2px black;
+  border: none;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet{
+  background: rgb(255, 255, 255);
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  top: -100px;
+  position: relative;
+}
+.cursor {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0.6em;
+  height: 1em;
+  background-color: #fff;
+  animation: blink 1s infinite;
+  cursor: url(app/images/cursor-pointer.png);
+}
+
+.cursor-stale {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0.6em;
+  height: 1em;
+  background-color: #fff;
+}
